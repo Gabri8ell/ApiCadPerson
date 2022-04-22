@@ -10,7 +10,7 @@ public class PersonaController {
 
     @GetMapping
     public String getBook(){
-        return "Api Test funcionando.";
+        return "Api Test";
     }
 
 }
