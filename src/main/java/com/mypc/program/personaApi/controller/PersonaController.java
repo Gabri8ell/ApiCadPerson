@@ -1,4 +1,4 @@
-package com.mypc.program.personaApi;
+package com.mypc.program.personaApi.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
