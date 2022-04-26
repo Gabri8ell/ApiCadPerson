@@ -21,13 +21,13 @@ public class Person{
     private Long id;
 
     @Column(nullable = false)
-    private  String firstName;
+    private String firstName;
 
     @Column(nullable = false)
     private String lastName;
 
     @Column(nullable = false, unique = true)
-    private  String cpf;
+    private String cpf;
 
     private LocalDate birthDate;
 
