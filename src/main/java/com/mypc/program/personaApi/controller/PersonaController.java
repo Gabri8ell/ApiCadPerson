@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/people")
+@RequestMapping("/api/v1/people")
 public class PersonaController {
 
     private PersonService personService;
