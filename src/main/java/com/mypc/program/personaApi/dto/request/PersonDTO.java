@@ -29,7 +29,7 @@ public class PersonDTO {
     private String lastName;
 
     @NotEmpty
-    //@CPF
+    @CPF
     private String cpf;
 
     private String birthDate;
