@@ -14,15 +14,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/people")
-//@AllArgsConstructor(onConstructor = @__(@Autowired))
-public class PersonaController {
+@AllArgsConstructor(onConstructor = @__(@Autowired))
+public class PersonController {
 
     private PersonService personService;
-
-    @Autowired
-    public PersonaController(PersonService PersonService) {
-        this.personService = PersonService;
-    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -43,12 +38,12 @@ public class PersonaController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteById(@PathVariable Long id) throws PersonNotFoundException {
-        personService.delete(id);
+    public MessageResponseDTO deleteById(@PathVariable Long id) throws PersonNotFoundException {
+        return personService.delete(id);
     }
 
     @PutMapping("/{id}")
-    public MessageResponseDTO updateByID(@PathVariable Long id, @Valid PersonDTO personDTO) throws PersonNotFoundException {
+    public MessageResponseDTO updateByID(@PathVariable Long id, @RequestBody @Valid PersonDTO personDTO) throws PersonNotFoundException {
         return personService.updateById(id, personDTO);
     }
 
