@@ -3,13 +3,12 @@ import com.mypc.program.personaApi.dto.response.MessageResponseDTO;
 import com.mypc.program.personaApi.dto.request.PersonDTO;
 import com.mypc.program.personaApi.entity.Person;
 import com.mypc.program.personaApi.exception.PersonNotFoundException;
-import com.mypc.program.personaApi.mapper.PersonMapper;
+import com.mypc.program.personaApi.dto.mapper.PersonMapper;
 import com.mypc.program.personaApi.repository.PersonRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

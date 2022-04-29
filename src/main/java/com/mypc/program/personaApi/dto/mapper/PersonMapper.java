@@ -1,4 +1,4 @@
-package com.mypc.program.personaApi.mapper;
+package com.mypc.program.personaApi.dto.mapper;
 
 import com.mypc.program.personaApi.dto.request.PersonDTO;
 import com.mypc.program.personaApi.entity.Person;
