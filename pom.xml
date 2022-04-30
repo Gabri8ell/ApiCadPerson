@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>8.0.0.Alpha3</version>
+			<version>6.2.3.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>org.xmlunit</groupId>
@@ -79,7 +79,12 @@
             <artifactId>spring-beans</artifactId>
             <version>5.3.19</version>
         </dependency>
-    </dependencies>
+<!--		<dependency>-->
+<!--			<groupId>org.hibernate.validator</groupId>-->
+<!--			<artifactId>hibernate-validator</artifactId>-->
+<!--			<version>6.2.3.Final</version>-->
+<!--		</dependency>-->
+	</dependencies>
 
 	<build>
 		<plugins>
